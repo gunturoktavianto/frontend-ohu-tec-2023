@@ -2,7 +2,7 @@ import React from 'react'
 
 const Kegiatan = () => {
     return (
-        <div className='w-screen h-screen pt-5'>
+        <div className='w-screen pt-5 h-fit'>
             <div className='w-full flex flex-col justify-center items-center text-center px-5'>
                 <h1 className='font-bold text-xl'>What we do in TEC and TEC intership ?</h1>
                 <p className=''>Lorem ipsum dolor sit amet consectetur. Tortor cras mattis sit id maecenas dictum interdum luctus in. Nibh malesuada non mauris non risus. Vel gravida eget justo aenean ultricies auctor risus.</p>
@@ -31,7 +31,7 @@ const Kegiatan = () => {
                 </div>
                 
             </div>
-            <div className='w-screen h-screen'></div>
+            
         </div>
     )
 }
