@@ -67,7 +67,7 @@ const PriceList = () => {
           navigation={true}
           modules={[Pagination, Navigation]}
           className="mySwiper"
-          style={arrowStyle(windowWidth)}
+          style={arrowStyle(windowWidth) as any}
         >
           <SwiperSlide>
             <div className="w-screen flex justify-center">
