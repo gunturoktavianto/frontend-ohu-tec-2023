@@ -12,11 +12,29 @@ import {
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRef } from "react";
+import { useScroll, useTransform, motion, useSpring } from "framer-motion";
 
 const Navbar = () => {
+    const targetRef = useRef<HTMLDivElement>(null)
+    const { scrollYProgress } = useScroll()
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001
+    });
+
+    const ProgressBar = () => {
+        return (
+            <motion.div  className="top-0 left-0 z-20 flex justify-start w-full ">
+                <motion.div style={{ scaleX }} className="w-full h-[1px] bg-red-500">
+
+                </motion.div>
+            </motion.div>
+        )
+    }
     const [show, setShow] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -47,7 +65,8 @@ const Navbar = () => {
     }, [lastScrollY]);
 
     return (
-        <div className="fixed top-0 z-10 flex items-center justify-center w-screen">
+        <div className="fixed top-0 z-10 flex flex-col items-center justify-center w-screen ">
+            <ProgressBar></ProgressBar>
             <motion.div
                 initial={{ y: -50 }}
                 whileInView={{ y: 0 }}

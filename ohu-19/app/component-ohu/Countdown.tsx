@@ -90,7 +90,7 @@ const Countdown = () => {
                     <p className="text-xs md:text-2xl">Seconds</p>
                 </motion.div>
             </div>
-            <h2 className="text-4xl font-semibold md:text-6xl">Till Registration Open</h2>
+            <h2 className="w-full text-4xl font-semibold text-center md:text-6xl">Till Registration Open</h2>
         </div>
     );
 };
