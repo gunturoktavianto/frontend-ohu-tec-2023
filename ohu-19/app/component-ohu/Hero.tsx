@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function PernakPernik(){
     return(
-        <div className="absolute bottom-0 flex md:gap-24 md:px-20"> 
+        <div className="flex md:gap-24 md:px-20 h-1/4 md:pt-10"> 
             <motion.div 
             initial={{opacity:0}}
             whileInView={{opacity:1}}
@@ -20,7 +20,7 @@ function PernakPernik(){
             transition={{
                 duration:0.3 , delay:0.6
             }}
-            className="w-20 h-20 translate-x-16 md:translate-x-40  bg-gradient-to-r from-[#FBB915] via-[#C9D650] to-[#6AC4B8] shadow-lg -rotate-6 shadow-black flex items-center justify-center text-5xl text-white font-bold">E</motion.div>
+            className="w-20 h-20 translate-x-16 md:translate-x-40  bg-gradient-to-r from-[#FBB915] via-[#C9D650] to-[#6AC4B8] shadow-lg -rotate-6 shadow-black flex items-center justify-center text-5xl text-white font-bold -translate-y-10">E</motion.div>
             <motion.div 
             initial={{opacity:0}}
             whileInView={{opacity:1}}
@@ -34,8 +34,8 @@ function PernakPernik(){
 
 const Hero = () => {
     return (
-        <div className="w-screen h-screen pt-20 ">
-            <div className="flex flex-col h-full px-10 pt-7 md:flex-row md:justify-center md:items-center md:px-20 md:w-screen md:translate-x-10 md:-translate-y-20">
+        <div className="flex flex-col w-screen pt-20 mb-20 h-fit">
+            <div className="flex flex-col px-10 h-3/4 pt-7 md:flex-row md:justify-center md:items-center md:px-20 md:w-screen md:translate-x-10 md:-translate-y-20">
                 <motion.div
                     animate={{
                         "--color-a": ["#FBB915", "#0A6EA2", "#6AC4B8", "#AF86D6"],
