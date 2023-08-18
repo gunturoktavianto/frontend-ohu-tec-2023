@@ -11,7 +11,7 @@ import Kegiatan from './component-ohu/Kegiatan'
 
 export default function Home() {
   return (
-    <>
+    <section className='w-screen overflow-hidden h-fit'>
         <Navbar></Navbar>
         <VideoPlayer></VideoPlayer>
         <Regis></Regis>      
@@ -19,6 +19,6 @@ export default function Home() {
         <PriceList></PriceList>
         <Kegiatan></Kegiatan>
         <Footer></Footer>
-    </>
+    </section>
   )
 }

@@ -45,7 +45,7 @@ const PriceList = () => {
              transition={{ duration: 0.5, delay: 0.3 }}
             className='flex flex-col items-center justify-center w-full px-5 text-center h-1/2'>
                 <h1 className='text-2xl font-bold lg:text-4xl '>Comitment Fee</h1>
-                <p className='mx-2 mt-4 text-center'>Lorem ipsum dolor sit amet consectetur. Tortor cras mattis sit id maecenas dictum interdum luctus in. Nibh malesuada non mauris non risus. Vel gravida eget justo aenean ultricies auctor risus.</p>
+                <p className='w-2/3 mx-2 mt-4 text-center'>Lorem ipsum dolor sit amet consectetur. Tortor cras mattis sit id maecenas dictum interdum luctus in. Nibh malesuada non mauris non risus. Vel gravida eget justo aenean ultricies auctor risus.</p>
             </motion.div>
             <div className='w-screen -translate-y-10 h-1/2 md:-translate-y-24'>
                 <Swiper

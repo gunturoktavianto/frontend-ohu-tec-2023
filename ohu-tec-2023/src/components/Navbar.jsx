@@ -25,9 +25,9 @@ const Navbar = () => {
         );
     }
     return (
-        <div className="bg-gray-200 w-screen h-14 flex justify-between items-center px-10 overflow-clip fixed    bg-opacity-90 ">
+        <div className="fixed flex items-center justify-between w-screen bg-gray-200 h-14 overflow-clip bg-opacity-90 ">
             {/** navbar for dekstop */}
-            <div className="w-full md:flex items-center justify-between hidden">
+            <div className="items-center justify-between hidden w-full md:flex">
                 <p>Logo</p>
                 <div className="flex gap-5 ">
                     <a className="cursor-pointer" href="#registration">Pricelist</a>
@@ -37,7 +37,7 @@ const Navbar = () => {
                 </div>
             </div>
             {/** navbar for mobile */}
-            <div className="md:hidden w-full h-full flex justify-between items-center">
+            <div className="flex items-center justify-between w-full h-full md:hidden">
                 <p>Logo</p>
                 <AnimatePresence>
                     {!openNavbar && (

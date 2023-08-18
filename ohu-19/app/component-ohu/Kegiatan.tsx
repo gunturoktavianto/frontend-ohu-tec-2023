@@ -38,14 +38,14 @@ const Kegiatan = () => {
         }
     }
     return (
-        <div className='w-screen pt-5 font-Poppins md:h-[50vw]'>
+        <div className='w-screen pt-5 font-Poppins md:h-[70vw] mb-16 flex items-center justify-center flex-col'>
             <motion.div
                 initial={{ scale: 0.95, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className='flex flex-col items-center justify-center w-full gap-3 px-5 pb-10 text-center'>
                 <h1 className='text-2xl font-bold lg:text-4xl '>What we do in TEC?</h1>
-                <p className='mx-2 mt-4 md:text-2xl text-center max-w-[60vw]'>Lorem ipsum dolor sit amet consectetur. Tortor cras mattis sit id maecenas dictum interdum luctus in. Nibh malesuada non mauris non risus. Vel gravida eget justo aenean ultricies auctor risus.</p>
+                <p className='mx-2 mt-4 md:text-xl text-center max-w-[60vw] '>Lorem ipsum dolor sit amet consectetur. Tortor cras mattis sit id maecenas dictum interdum luctus in. Nibh malesuada non mauris non risus. Vel gravida eget justo aenean ultricies auctor risus.</p>
             </motion.div>
             <Swiper
                 slidesPerView={1}
@@ -65,7 +65,7 @@ const Kegiatan = () => {
                             <div className='w-full bg-red-200 h-1/2'></div>
                             <div className='flex flex-col items-center justify-center w-full px-2 text-center h-1/2 lg:justify-normal lg:pt-5 lg:px-16'>
                                 <h2 className='font-bold text-sm sm:text-[15px] lg:text-[16px] min-[1300px]:text-lg '>Accelerate Business Acumen</h2>
-                                <p className='text-[10px] sm:text-[12px] lg:text-sm min-[1300px]:text-[16px] min-[1300px]:pt-7'>Lorem ipsum dolor sit amet consectetur. Aenean placerat ac facilisis purus. Ut fermentum aliquam venenatis sapien. At tempus et lacus sit sed vestibulum.</p>
+                                <p className='text-[10px] sm:text-[12px] lg:text-sm min-[1300px]:text-[16px] min-[1300px]:pt-7 '>Lorem ipsum dolor sit amet consectetur. Aenean placerat ac facilisis purus. Ut fermentum aliquam venenatis sapien. At tempus et lacus sit sed vestibulum.</p>
                             </div>
                         </div>
                     </div>

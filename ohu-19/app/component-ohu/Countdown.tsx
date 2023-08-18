@@ -49,9 +49,9 @@ const Countdown = () => {
     }, [countSecond]);
 
     return (
-        <div className='h-[80vw] w-screen flex items-center justify-center flex-col gap-10 md:h-[30vw] md:-translate-y-20 md:gap-16 '>
+        <div className='h-[80vw] w-screen flex items-center justify-center flex-col gap-10 md:h-[30vw] md:-translate-y-20 md:gap-16 my-24'>
             <h1 className='text-4xl font-semibold md:text-6xl'>Countdown</h1>
-            <div className='flex items-center justify-center gap-4 text-4xl md:gap-8'>
+            <div className='flex items-center justify-center gap-4 text-4xl md:gap-8 '>
                 <motion.div
                     initial={{ scale: 0.95, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
