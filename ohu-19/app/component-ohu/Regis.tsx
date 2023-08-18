@@ -30,7 +30,7 @@ function RegistrationInfo() {
     return (
         <div
 
-            id="registration" className="flex items-center justify-center w-screen md:h-[50vw] my-5 bg-gradient-to-r from-[#372F85] via-[#0A6EA2] to-[#FFD649] text-white">
+            id="registration" className="flex items-center justify-center w-screen md:h-[45vw] my-5 bg-gradient-to-r from-[#372F85] via-[#0A6EA2] to-[#FFD649] text-white">
             <div className="flex flex-col items-center justify-center w-5/6  mt-10 mb-10 md:flex-row  md:max-w-[90vw] ">
                 <Image
                     src="https://divedigital.id/wp-content/uploads/2023/04/Ai-Hoshino-1.jpg"

@@ -29,7 +29,7 @@ const Navbar = () => {
     const ProgressBar = () => {
         return (
             <motion.div  className="top-0 left-0 z-20 flex justify-start w-full ">
-                <motion.div style={{ scaleX }} className="w-full h-[1px] bg-red-500">
+                <motion.div style={{ scaleX }} className="w-full h-[3px] bg-red-500">
 
                 </motion.div>
             </motion.div>
