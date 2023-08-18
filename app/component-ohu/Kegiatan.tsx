@@ -13,8 +13,10 @@ import { Pagination, Navigation } from "swiper/modules";
 import { motion } from "framer-motion";
 
 function getWindowWidth() {
-  const { innerWidth: width } = window;
-  return width;
+  if (typeof window !== "undefined") {
+    const { innerWidth: width } = window;
+    return width;
+  }
 }
 
 const PriceList = () => {
@@ -34,8 +36,8 @@ const PriceList = () => {
       return { "--swiper-navigation-sides-offset": "30vw" };
     } else if (windowWidth >= 570) {
       return { "--swiper-navigation-sides-offset": "10vw" };
-    }else{
-        return { "--swiper-navigation-sides-offset": "0vw" };
+    } else {
+      return { "--swiper-navigation-sides-offset": "0vw" };
     }
   }
 
@@ -67,7 +69,7 @@ const PriceList = () => {
           navigation={true}
           modules={[Pagination, Navigation]}
           className="mySwiper"
-          style={arrowStyle(windowWidth) as any}
+          style={arrowStyle(windowWidth as number) as any}
         >
           <SwiperSlide>
             <div className="w-screen flex justify-center">
