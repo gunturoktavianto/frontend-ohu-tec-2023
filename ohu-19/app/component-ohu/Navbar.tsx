@@ -148,7 +148,7 @@ const Navbar = () => {
                                 <NavigationMenuLink
                                     className={navigationMenuTriggerStyle()}
                                 >
-                                    Countdown
+                                Countdown
                                 </NavigationMenuLink>
                             </a>
                         </NavigationMenuItem>

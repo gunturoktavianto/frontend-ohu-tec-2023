@@ -67,7 +67,7 @@ const Hero = () => {
                         repeatType: 'loop',
             
                       }}
-                    className="flex flex-col w-full md:w-3/4 ">
+                    className="flex flex-col w-full md:w-5/6 ">
                     <motion.p
                         initial={{ scale: 0.95, opacity: 0 }}
                         whileInView={{ scale: 1, opacity: 1 }}
@@ -77,17 +77,15 @@ const Hero = () => {
                         initial={{ scale: 0.95, opacity: 0 }}
                         whileInView={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.5 }}
-                        className=" bg-gradient-to-br from-[--color-a] via-[--color-b] to-[--color-c] text-4xl font-extrabold md:text-6xl bg-clip-text text-transparent drop-shadow-lg shadow-[#372F85]">
-                        Be a part of <br /> TEC INTERNSHIP 2023
+                        className=" bg-gradient-to-br from-[--color-a] via-[--color-b] to-[--color-c] text-3xl font-extrabold md:text-7xl bg-clip-text text-transparent drop-shadow-lg shadow-[#372F85] w-full">
+                        OPEN HOUSE UNIT<br /> TEC ITB 2023
                     </motion.p>
                     <motion.p
                         initial={{ scale: 0.95, opacity: 0 }}
                         whileInView={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.7 }}
                         className="md:text-2xl">
-                        Lorem ipsum dolor sit amet consectetur. Elit vestibulum
-                        faucibus porttitor libero potenti. Tempor vulputate id
-                        mattis ultrices imperdiet lorem gravida feugiat.
+                        Prepare to TEC your seat on the one and only technopreneur club in ITB.
                     </motion.p>
                     <a href="#countdown">
                         <button className="w-1/4 px-1 py-1 mx-3 my-5 bg-gradient-to-r from-[#FBB915] via-[#0A6EA2] to-[#6AC4B8] font-semibold rounded-xl md:my-7 md:h-10 text-white shadow-lg shadow-[#372F85] hover:scale-125 transition duration-1000 hover:duration-300 cursor-pointer">Join Now!</button>
