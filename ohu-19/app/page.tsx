@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Navbar from "./component-ohu/Navbar";
 import VideoPlayer from "./component-ohu/VideoPlayer";
@@ -10,6 +11,7 @@ import PriceList from "./component-ohu/Pricelist";
 import Kegiatan from "./component-ohu/Kegiatan";
 
 export default function Home() {
+    
     return (
         <html className="scroll-smooth">
             <section className="w-[99vw] overflow-hidden h-fit">

@@ -34,7 +34,7 @@ function PernakPernik(){
 
 const Hero = () => {
     return (
-        <div className="flex flex-col w-screen pt-20 mb-20 h-fit">
+        <div className="flex flex-col w-screen pt-20 mb-20 md:pt-32 h-fit">
             <div className="flex flex-col px-10 h-3/4 pt-7 md:flex-row md:justify-center md:items-center md:px-20 md:w-screen md:translate-x-10 md:-translate-y-20">
                 <motion.div
                     animate={{
