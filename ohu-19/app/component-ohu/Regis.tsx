@@ -3,12 +3,34 @@ import React from "react";
 import Image from "next/image";
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { motion } from "framer-motion";
+import { AiFillStar } from "react-icons/ai"
 
 function RegistrationInfo() {
+    function Stars() {
+        return (
+            <>
+                <div className="absolute left-5 rotate-6">
+                    <AiFillStar></AiFillStar>
+                </div>
+                <div className="absolute -translate-y-28 left-20 rotate-6">
+                    <AiFillStar></AiFillStar>
+                </div>
+                <div className="absolute right-7 translate-y-36 rotate-6">
+                    <AiFillStar></AiFillStar>
+                </div>
+                <div className="absolute rotate-45 right-72 translate-y-44">
+                    <AiFillStar></AiFillStar>
+                </div>
+                <div className="absolute right-80 -translate-y-44 rotate-12">
+                    <AiFillStar></AiFillStar>
+                </div>
+            </>
+        )
+    }
     return (
-        <div 
-        
-        id="registration" className="flex items-center justify-center w-screen ">
+        <div
+
+            id="registration" className="flex items-center justify-center w-screen md:h-[50vw] my-5 bg-gradient-to-r from-[#372F85] via-[#0A6EA2] to-[#FFD649] text-white">
             <div className="flex flex-col items-center justify-center w-5/6  mt-10 mb-10 md:flex-row  md:max-w-[90vw] ">
                 <Image
                     src="https://divedigital.id/wp-content/uploads/2023/04/Ai-Hoshino-1.jpg"
@@ -29,6 +51,7 @@ function RegistrationInfo() {
                     </div>
                 </motion.div>
             </div>
+             <Stars></Stars>
         </div>
     );
 }

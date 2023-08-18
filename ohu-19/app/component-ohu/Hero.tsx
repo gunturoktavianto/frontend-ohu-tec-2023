@@ -28,13 +28,32 @@ function PernakPernik(){
                 duration:0.3 , delay:0.9
             }}
             className="w-20 h-20 translate-x-24 md:translate-x-64  bg-gradient-to-br from-[#0A6EA2] via-[#6AC4B8] to-[#6AC4B8] shadow-lg -translate-y-44 -rotate-6 shadow-black flex items-center justify-center text-5xl text-white font-bold">C</motion.div>
+            <div className="hidden md:scroll-smooth md:absolute md:flex md:items-center md:justify-center md:w-full md:pt-10 md:animate-bounce md:bottom-10">
+                    <a href="#videoplayer">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="w-10 h-10 cursor-pointer md:w-16 md:h-16"
+                        >
+                            {/* icon */}
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                        </svg>
+                    </a>
+                </div>
         </div>
     )
 }
 
 const Hero = () => {
     return (
-        <div className="flex flex-col w-screen pt-20 mb-20 md:pt-32 h-fit">
+        <div className="flex flex-col w-screen pt-20 mb-20 md:pt-32 h-fit md:pb-24">
             <div className="flex flex-col px-10 h-3/4 pt-7 md:flex-row md:justify-center md:items-center md:px-20 md:w-screen md:translate-x-10 md:-translate-y-20">
                 <motion.div
                     animate={{
@@ -77,25 +96,7 @@ const Hero = () => {
                 <div className="flex items-center justify-center w-full py-5 h-fit">
                     <div className="w-64 h-64 bg-gray-200 rounded-full md:w-96 md:h-96"></div>
                 </div>
-                <div className="hidden md:scroll-smooth md:fixed md:flex md:items-center md:justify-center md:w-full md:pt-10 md:animate-bounce md:bottom-10">
-                    <a href="#videoplayer">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={1.5}
-                            stroke="currentColor"
-                            className="w-10 h-10 cursor-pointer md:w-16 md:h-16"
-                        >
-                            {/* icon */}
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                        </svg>
-                    </a>
-                </div>
+                
             </div>
             <PernakPernik></PernakPernik>
         </div>
