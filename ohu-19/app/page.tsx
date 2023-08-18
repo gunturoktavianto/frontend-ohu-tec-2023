@@ -12,7 +12,7 @@ import Kegiatan from "./component-ohu/Kegiatan";
 export default function Home() {
     return (
         <html className="scroll-smooth">
-            <section className="w-screen overflow-hidden h-fit">
+            <section className="w-[99vw] overflow-hidden h-fit">
                 <Hero></Hero>
                 <Navbar></Navbar>
                 <VideoPlayer></VideoPlayer>

@@ -60,7 +60,7 @@ const Navbar = () => {
                 <NavigationMenu>
                     <NavigationMenuList>
                         <NavigationMenuItem className="py-3">
-                            <NavigationMenuTrigger className="text-2xl text-white bg-transparent">
+                            <NavigationMenuTrigger className={`text-2xl text-white bg-transparent ${!show && "text-black"}`}>
                                 <p className="">TEC</p>
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>

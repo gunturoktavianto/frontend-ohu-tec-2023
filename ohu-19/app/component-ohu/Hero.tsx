@@ -1,22 +1,35 @@
+'use client'
 import React from "react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
     return (
         <div className="w-screen h-screen pt-20 ">
             <div className="flex flex-col h-full px-10 pt-7 md:flex-row md:justify-center md:items-center md:px-20 md:w-screen md:translate-x-10 md:-translate-y-20">
                 <div className="flex flex-col w-full md:w-3/4 ">
-                    <p className="md:text-3xl">Global, Enrich, High Impact</p>
-                    <p className="text-3xl font-bold md:text-6xl">
+                    <motion.p
+                        initial={{ scale: 0.95, opacity: 0 }}
+                        whileInView={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 0.5, delay: 0.3 }}
+                        className="md:text-3xl">Global, Enrich, High Impact</motion.p>
+                    <motion.p
+                        initial={{ scale: 0.95, opacity: 0 }}
+                        whileInView={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 0.5, delay: 0.5 }}
+                        className="text-3xl font-bold md:text-6xl">
                         Be a part of <br /> TEC INTERNSHIP 2023
-                    </p>
-                    <p className="md:text-2xl">
+                    </motion.p>
+                    <motion.p
+                        initial={{ scale: 0.95, opacity: 0 }}
+                        whileInView={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 0.5, delay: 0.7 }}
+                        className="md:text-2xl">
                         Lorem ipsum dolor sit amet consectetur. Elit vestibulum
                         faucibus porttitor libero potenti. Tempor vulputate id
                         mattis ultrices imperdiet lorem gravida feugiat.
-                    </p>
+                    </motion.p>
                     <a href="#countdown">
-                        
-                        <button className="w-1/4 my-2 bg-red-200 rounded-xl md:my-5 md:h-10">Join Now</button>
+                        <button className="w-1/4 px-1 py-1 mx-3 my-5 bg-red-200 rounded-xl md:my-7 md:h-10">Join Now!</button>
                     </a>
                 </div>
                 <div className="flex items-center justify-center w-full py-5 h-fit">

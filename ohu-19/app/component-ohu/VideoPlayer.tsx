@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const VideoPlayer = () => {
+    let factor = 0.3;
     return (
         <div
             id="videoplayer"
@@ -21,8 +22,10 @@ const VideoPlayer = () => {
                     Techno Entrepreneur Club
                 </h1>
                 <h1 className="text-2xl font-medium">OPEN HOUSE UNIT 2023</h1>
-                <div className="px-30">
-                    <ReactPlayer url="https://youtu.be/NlIj4a213h0" />
+                <div className="px-30 ">
+                    
+                        <ReactPlayer  url="https://youtu.be/NlIj4a213h0" />
+                    
                 </div>
             </motion.div>
         </div>
