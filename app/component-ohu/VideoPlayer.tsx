@@ -24,7 +24,7 @@ const VideoPlayer = () => {
                 <h1 className="text-lg min-[500px]:text-xl lg:text-2xl font-medium">OPEN HOUSE UNIT 2023</h1>
                 <div className="px-30 ">
                     
-                <iframe src="https://www.youtube.com/embed/NlIj4a213h0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="w-[80vw] h-[60vw] sm:w-[50vw] sm:h-[30vw]"></iframe>
+                <iframe src="https://www.youtube.com/embed/NlIj4a213h0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="w-[80vw] h-[60vw] sm:w-[50vw] sm:h-[30vw]"></iframe>
                     
                 </div>
             </motion.div>
