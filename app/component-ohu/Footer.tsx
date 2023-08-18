@@ -16,39 +16,38 @@ function Footer() {
             <div className='flex items-center my-2'>
               <AiFillInstagram size="2em" />
               <div className='ml-3'>
-                <h2>@tex.ohu</h2>
-                <h2>@tec.itb</h2>
+                <a href="https://www.instagram.com/tec.ohu/">@tec.ohu</a ><br/>
+                <a href="https://www.instagram.com/tec.itb/">@tec.itb</a >
               </div>
             </div>
 
-            <div className='flex items-center my-2'>
+            {/* <div className='flex items-center my-2'>
                 <AiOutlineTwitter size="2em" />
                 <div className='ml-3'>
                   <h2>@tex.ohu</h2>
                   <h2>@tec.itb</h2>
                 </div>
-            </div>
+            </div> */}
 
 
           </div>
           <div className='flex flex-col m-5 text-sm basis-1/3 lg:mx-20'>
             <h1 className='font-bold'>For any questions and detailed information, please don’t hesitate to contact
             </h1>
-            <div className='flex items-center my-2'>
+            <div className='flex items-center mt-2'>
               <FaLine size="2em" />
               <div className='ml-3'>
-                <h2>shulhakeren</h2>
-                <h2>gunturop</h2>
+                <h2>nafisha_44</h2>
               </div>
             </div>
-
-            <div className='flex items-center my-2'>
+{/* 
+            <div className='flex items-center mt-2'>
                 <AiOutlineWhatsApp size="2em" />
                 <div className='ml-3'>
                   <h2>081234568910</h2>
                   <h2>087878123456</h2>
                 </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

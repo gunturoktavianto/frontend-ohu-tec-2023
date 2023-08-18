@@ -5,19 +5,21 @@ import Footer from "./component-ohu/Footer";
 import Countdown from "./component-ohu/Countdown";
 import Hero from "./component-ohu/Hero";
 import Kegiatan from "./component-ohu/Kegiatan";
+import Popup from "./component-ohu/Popup";
 
 export default function Home() {
     
     return (
-        <html className="scroll-smooth">
-            <section className="w-[99vw] overflow-hidden h-fit">
-                <Hero></Hero>
-                <Navbar></Navbar>
-                <VideoPlayer></VideoPlayer>
-                <Regis></Regis>
-                <Kegiatan></Kegiatan>
-                <Countdown></Countdown>
-                <Footer></Footer>
+        <html className="scroll-smooth overflow-x-hidden">
+            <section className="w-[100vw]  overflow-hidden h-fit">
+                <Popup />
+                <Hero />
+                <Navbar />
+                <VideoPlayer />
+                <Regis />
+                <Kegiatan />
+                <Countdown />
+                <Footer />
             </section>
         </html>
     );
