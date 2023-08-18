@@ -13,13 +13,17 @@ import {
 import { Button } from "@/components/ui/button"
 import Image from 'next/image'
 import { AspectRatio } from "@/components/ui/aspect-ratio"
-
+import {motion} from 'framer-motion'
 
 const Navbar = () => {
 
   return (
     <div className='fixed top-0 z-10 flex items-center justify-center w-screen'>
-      <div className='w-[70vw] md:w-fit md:px-10 h-fit absolute top-0  bg-black rounded-b-2xl flex justify-center items-center shadow-md shadow-gray-800 '>
+      <motion.div 
+      initial = {{y:-50}}
+      whileInView={{y:0}}
+      transition={{duration:1}}
+      className='w-[70vw] md:w-fit md:px-10 h-fit absolute top-0  bg-black rounded-b-2xl flex justify-center items-center shadow-md shadow-gray-800 '>
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem className='py-3'>
@@ -59,9 +63,9 @@ const Navbar = () => {
                 Countdown
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className='py-5 w-[300px] px-3 '>
-                  <p className='text-3xl font-semibold'>CountDown</p>
-                  <p className='font-normal'>19 Hari 20 jam 30 menit 20 detik</p>
+                <div className='px-3 py-5 cursor-pointer w-fit hover:bg-slate-800 hover:text-white'>
+                  <p className='text-3xl font-semibold'>Check Countdown</p>
+                  <p className='font-normal'>Detik detik open regristrasi TEC ITB !</p>
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -69,7 +73,7 @@ const Navbar = () => {
           </NavigationMenuList>
         </NavigationMenu>
 
-      </div>
+      </motion.div>
     </div>
   )
 }

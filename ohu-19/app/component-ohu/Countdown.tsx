@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 
 const Countdown = () => {
     const second = 1000
@@ -48,28 +49,44 @@ const Countdown = () => {
     }, [countSecond]);
 
     return (
-        <div className='h-[70vw] w-screen flex items-center justify-center flex-col gap-10 md:h-[50vw] md:-translate-y-20 md:gap-16 '>
+        <div className='h-[80vw] w-screen flex items-center justify-center flex-col gap-10 md:h-[30vw] md:-translate-y-20 md:gap-16 '>
             <h1 className='text-4xl font-semibold md:text-6xl'>Countdown</h1>
             <div className='flex items-center justify-center gap-4 text-4xl md:gap-8'>
-                <div className='grid p-2 text-center shadow-xl rounded-2xl md:text-8xl'>
+                <motion.div
+                    initial={{ scale: 0.95, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0+0.3 }}
+                    className='grid p-2 text-center shadow-xl rounded-2xl md:text-8xl'>
                     <p>{countDay}</p>
                     <p className='text-xs md:text-2xl'>Days</p>
-                </div>
+                </motion.div>
                 <p className=''>:</p>
-                <div className='grid p-2 text-center shadow-xl rounded-2xl md:text-8xl'>
+                <motion.div
+                    initial={{ scale: 0.95, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.2+0.3 }}
+                    className='grid p-2 text-center shadow-xl rounded-2xl md:text-8xl'>
                     <p>{countHour}</p>
                     <p className='text-xs md:text-2xl'>Hours</p>
-                </div>
+                </motion.div>
                 <p>:</p>
-                <div className='grid p-2 text-center shadow-xl rounded-2xl md:text-8xl'>
+                <motion.div
+                    initial={{ scale: 0.95, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.4+0.3 }}
+                    className='grid p-2 text-center shadow-xl rounded-2xl md:text-8xl'>
                     <p>{countMinute}</p>
                     <p className='text-xs md:text-2xl'>Minutes</p>
-                </div>
+                </motion.div>
                 <p>:</p>
-                <div className='grid p-2 text-center shadow-xl rounded-2xl md:text-8xl'>
+                <motion.div
+                    initial={{ scale: 0.95, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.5+0.3 }}
+                    className='grid p-2 text-center shadow-xl rounded-2xl md:text-8xl'>
                     <p>{countSecond}</p>
                     <p className='text-xs md:text-2xl'>Seconds</p>
-                </div>
+                </motion.div>
 
 
             </div>
