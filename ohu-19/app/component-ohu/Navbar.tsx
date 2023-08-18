@@ -82,13 +82,13 @@ const Navbar = () => {
                                                 href="#videoplayer"
                                                 className="font-semibold"
                                             >
-                                                Opening
+                                                Teaser
                                             </a>
                                             <a
                                                 href="#videoplayer"
                                                 className="text-xs font-light"
                                             >
-                                                Footage persembahan oleh TEC
+                                                Open House Unit TEC 2023
                                             </a>
                                         </Button>
                                         <Button className="flex flex-col text-black bg-white h-1/3 hover:text-white">
@@ -116,7 +116,7 @@ const Navbar = () => {
                                                 href="#footer"
                                                 className="text-xs font-light"
                                             >
-                                                Sosial media TEC dan OHU TEC
+                                                Check on footer!
                                             </a>
                                         </Button>
                                     </div>
