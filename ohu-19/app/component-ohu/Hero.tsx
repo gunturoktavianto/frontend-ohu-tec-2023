@@ -2,21 +2,63 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+function PernakPernik(){
+    return(
+        <div className="absolute bottom-0 flex md:gap-24 md:px-20"> 
+            <motion.div 
+            initial={{opacity:0}}
+            whileInView={{opacity:1}}
+            transition={{
+                duration:0.3 , delay:0.3
+            }}
+            className="w-20 h-20 translate-x-10 -translate-y-20  bg-gradient-to-t from-[#372F85] via-[#AF86D6] to-[#AF86D6] shadow-lg rotate-12 shadow-black flex items-center justify-center text-5xl text-white font-bold">
+               <p>T</p>
+            </motion.div>
+            <motion.div  
+            initial={{opacity:0}}
+            whileInView={{opacity:1}}
+            transition={{
+                duration:0.3 , delay:0.6
+            }}
+            className="w-20 h-20 translate-x-40  bg-gradient-to-r from-[#FBB915] via-[#C9D650] to-[#6AC4B8] shadow-lg -rotate-6 shadow-black flex items-center justify-center text-5xl text-white font-bold">E</motion.div>
+            <motion.div 
+            initial={{opacity:0}}
+            whileInView={{opacity:1}}
+            transition={{
+                duration:0.3 , delay:0.9
+            }}
+            className="w-20 h-20 translate-x-64  bg-gradient-to-br from-[#0A6EA2] via-[#6AC4B8] to-[#6AC4B8] shadow-lg -translate-y-44 -rotate-6 shadow-black flex items-center justify-center text-5xl text-white font-bold">C</motion.div>
+        </div>
+    )
+}
+
 const Hero = () => {
     return (
         <div className="w-screen h-screen pt-20 ">
             <div className="flex flex-col h-full px-10 pt-7 md:flex-row md:justify-center md:items-center md:px-20 md:w-screen md:translate-x-10 md:-translate-y-20">
-                <div className="flex flex-col w-full md:w-3/4 ">
+                <motion.div
+                    animate={{
+                        "--color-a": ["#FBB915", "#0A6EA2", "#6AC4B8", "#AF86D6"],
+                        "--color-b": ["AF86D6", "#C9D650", "#C9D650"],
+                        "--color-c": ["#372F85", "#f4e54d", "#FFD649", "#4455A3"],
+                    } as any}
+                    transition={{
+                        duration: 4,
+                        repeat: Infinity,
+                        repeatType: 'loop',
+            
+                      }}
+                    className="flex flex-col w-full md:w-3/4 ">
                     <motion.p
                         initial={{ scale: 0.95, opacity: 0 }}
                         whileInView={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
-                        className="md:text-3xl">Global, Enrich, High Impact</motion.p>
+                        className="font-medium md:text-3xl">Global, Enrich, High Impact</motion.p>
                     <motion.p
                         initial={{ scale: 0.95, opacity: 0 }}
                         whileInView={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.5 }}
-                        className="text-3xl font-bold md:text-6xl">
+                        className=" bg-gradient-to-br from-[--color-a] via-[--color-b] to-[--color-c] text-4xl font-extrabold md:text-6xl bg-clip-text text-transparent drop-shadow-lg shadow-[#372F85]">
                         Be a part of <br /> TEC INTERNSHIP 2023
                     </motion.p>
                     <motion.p
@@ -29,9 +71,9 @@ const Hero = () => {
                         mattis ultrices imperdiet lorem gravida feugiat.
                     </motion.p>
                     <a href="#countdown">
-                        <button className="w-1/4 px-1 py-1 mx-3 my-5 bg-red-200 rounded-xl md:my-7 md:h-10">Join Now!</button>
+                        <button className="w-1/4 px-1 py-1 mx-3 my-5 bg-gradient-to-r from-[#FBB915] via-[#0A6EA2] to-[#6AC4B8] font-semibold rounded-xl md:my-7 md:h-10 text-white shadow-lg shadow-[#372F85] hover:scale-125 transition duration-1000 hover:duration-300 cursor-pointer">Join Now!</button>
                     </a>
-                </div>
+                </motion.div>
                 <div className="flex items-center justify-center w-full py-5 h-fit">
                     <div className="w-64 h-64 bg-gray-200 rounded-full md:w-96 md:h-96"></div>
                 </div>
@@ -55,6 +97,7 @@ const Hero = () => {
                     </a>
                 </div>
             </div>
+            <PernakPernik></PernakPernik>
         </div>
     );
 };

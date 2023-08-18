@@ -6,8 +6,10 @@ import { motion } from "framer-motion";
 
 function RegistrationInfo() {
     return (
-        <div id="registration" className="flex items-center justify-center w-screen">
-            <div className="flex flex-col items-center justify-center  h-[50vw] w-5/6  mt-10 mb-10 md:flex-row  md:max-w-[90vw] md:h-[30vw]">
+        <div 
+        
+        id="registration" className="flex items-center justify-center w-screen ">
+            <div className="flex flex-col items-center justify-center  h-[50vw] w-5/6  mt-10 mb-10 md:flex-row  md:max-w-[90vw] md:h-[30vw] ">
                 <Image
                     src="https://divedigital.id/wp-content/uploads/2023/04/Ai-Hoshino-1.jpg"
                     alt="Photo by Drew Beamer"
