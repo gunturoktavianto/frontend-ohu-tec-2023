@@ -14,15 +14,16 @@ const Hero = () => {
                         faucibus porttitor libero potenti. Tempor vulputate id
                         mattis ultrices imperdiet lorem gravida feugiat.
                     </p>
-                    <button className="w-1/4 my-2 bg-red-200 rounded-xl md:my-5 md:h-10">
-                        Join Now
-                    </button>
+                    <a href="#countdown">
+                        
+                        <button className="w-1/4 my-2 bg-red-200 rounded-xl md:my-5 md:h-10">Join Now</button>
+                    </a>
                 </div>
                 <div className="flex items-center justify-center w-full py-5 h-fit">
                     <div className="w-64 h-64 bg-gray-200 rounded-full md:w-96 md:h-96"></div>
                 </div>
-                <div className="fixed flex items-center justify-center w-full pt-10 animate-bounce bottom-10">
-                    <a href="#registration">
+                <div className="hidden md:scroll-smooth md:fixed md:flex md:items-center md:justify-center md:w-full md:pt-10 md:animate-bounce md:bottom-10">
+                    <a href="#videoplayer">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"

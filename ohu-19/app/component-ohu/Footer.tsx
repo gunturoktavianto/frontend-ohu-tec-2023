@@ -3,7 +3,7 @@ import { FaLine } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className=" bg-slate-200">
+    <div id="footer" className=" bg-slate-200">
       <section>
         <div className='lg:flex'>
           <div className='m-5 text-sm basis-1/3 lg:mx-20'>
