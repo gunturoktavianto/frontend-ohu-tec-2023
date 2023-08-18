@@ -42,7 +42,7 @@ const PriceList = () => {
   return (
     <div
       id="kegiatan"
-      className="scroll-smooth items-center justify-center w-screen h-screen py-20 font-Poppins"
+      className="scroll-smooth items-center justify-center w-screen py-20 font-Poppins"
     >
       <motion.div
         initial={{ scale: 0.95, opacity: 0 }}
@@ -57,7 +57,7 @@ const PriceList = () => {
           risus. Vel gravida eget justo aenean ultricies auctor risus.
         </p>
       </motion.div>
-      <div className="w-screen -translate-y-10 h-1/2 md:-translate-y-24">
+      <div className="w-screen h-1/2 ">
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
