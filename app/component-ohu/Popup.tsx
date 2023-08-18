@@ -1,18 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
-import MonsterInc from "public/assets/image/monsterInc.png";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
+
 
 function Popup() {
   const [toggle, setToggle] = useState(false);
