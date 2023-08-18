@@ -13,17 +13,44 @@ import {
 import { Button } from "@/components/ui/button"
 import Image from 'next/image'
 import { AspectRatio } from "@/components/ui/aspect-ratio"
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+import { useState , useEffect } from 'react'
 
 const Navbar = () => {
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== 'undefined') {
+      if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
+        setShow(false);
+      } else { // if scroll up show the navbar
+        setShow(true);
+      }
+
+      // remember current page location to use in the next move
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlNavbar);
+
+      // cleanup function
+      return () => {
+        window.removeEventListener('scroll', controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
 
   return (
     <div className='fixed top-0 z-10 flex items-center justify-center w-screen'>
-      <motion.div 
-      initial = {{y:-50}}
-      whileInView={{y:0}}
-      transition={{duration:1}}
-      className='w-[70vw] md:w-fit md:px-10 h-fit absolute top-0  bg-black rounded-b-2xl flex justify-center items-center shadow-md shadow-gray-800 '>
+      <motion.div
+        initial={{ y: -50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+        className={`w-[70vw] md:w-fit md:px-10 h-fit absolute top-0  bg-black rounded-b-2xl flex justify-center items-center shadow-md shadow-gray-800 transition-all duration-300${!show && '-translate-y-10 md:-translate-y-0 bg-white  bg-opacity-10 backdrop-blur-lg drop-shadow-lg '} `}>
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem className='py-3'>
