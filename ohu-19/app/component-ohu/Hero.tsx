@@ -20,14 +20,14 @@ function PernakPernik(){
             transition={{
                 duration:0.3 , delay:0.6
             }}
-            className="w-20 h-20 translate-x-40  bg-gradient-to-r from-[#FBB915] via-[#C9D650] to-[#6AC4B8] shadow-lg -rotate-6 shadow-black flex items-center justify-center text-5xl text-white font-bold">E</motion.div>
+            className="w-20 h-20 translate-x-16 md:translate-x-40  bg-gradient-to-r from-[#FBB915] via-[#C9D650] to-[#6AC4B8] shadow-lg -rotate-6 shadow-black flex items-center justify-center text-5xl text-white font-bold">E</motion.div>
             <motion.div 
             initial={{opacity:0}}
             whileInView={{opacity:1}}
             transition={{
                 duration:0.3 , delay:0.9
             }}
-            className="w-20 h-20 translate-x-64  bg-gradient-to-br from-[#0A6EA2] via-[#6AC4B8] to-[#6AC4B8] shadow-lg -translate-y-44 -rotate-6 shadow-black flex items-center justify-center text-5xl text-white font-bold">C</motion.div>
+            className="w-20 h-20 translate-x-24 md:translate-x-64  bg-gradient-to-br from-[#0A6EA2] via-[#6AC4B8] to-[#6AC4B8] shadow-lg -translate-y-44 -rotate-6 shadow-black flex items-center justify-center text-5xl text-white font-bold">C</motion.div>
         </div>
     )
 }
