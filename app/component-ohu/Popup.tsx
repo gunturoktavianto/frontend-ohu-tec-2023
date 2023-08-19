@@ -22,7 +22,7 @@ function Popup() {
     >
       <div>
         <button onClick={toggleButton} className="shadow-2xl text-white bg-black rounded-xl w-40">
-            Hi, Click Me Twice!
+            Hi, Click Me!
         </button>
       </div>
     </div>

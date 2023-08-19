@@ -8,7 +8,7 @@ function Footer() {
         <div className='lg:flex pb-5'>
           <div className='m-5 text-sm basis-1/3 lg:mx-20'>
             <h1 className='font-bold'>Techno Entrepreneur Club</h1>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum dicta rem perferendis quia assumenda qui. Explicabo sint eum molestias recusandae.</h2>
+            {/* <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum dicta rem perferendis quia assumenda qui. Explicabo sint eum molestias recusandae.</h2> */}
           </div>
 
           <div className='flex flex-col m-5 text-sm basis-1/3 lg:mx-20'>

@@ -13,9 +13,9 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { useRef } from "react";
 import { useScroll, useTransform, motion, useSpring } from "framer-motion";
+import NavProfile from "/public/assets/image/navbarProfile.jpg";
 
 const Navbar = () => {
     const targetRef = useRef<HTMLDivElement>(null)
@@ -89,10 +89,11 @@ const Navbar = () => {
                                         className=" bg-muted"
                                     >
                                         <Image
-                                            src="https://w0.peakpx.com/wallpaper/330/348/HD-wallpaper-blue-eye-cute-alone-anime-girl.jpg"
-                                            alt="Photo by Drew Beamer"
+                                            src={NavProfile}
+                                            alt="Navbar Profile"
                                             fill
                                             className="object-cover w-1/2 rounded-md"
+                                            objectPosition="45% bottom"
                                         />
                                     </AspectRatio>
                                     <div className="w-1/2 ">
