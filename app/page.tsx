@@ -16,7 +16,7 @@ export default function Home() {
                 <Hero />
                 <Navbar />
                 <VideoPlayer />
-                <Regis />
+                {/* <Regis /> */}
                 {/* <Kegiatan /> */}
                 <Countdown />
                 <Footer />
