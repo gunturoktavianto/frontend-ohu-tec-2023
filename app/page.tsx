@@ -17,7 +17,7 @@ export default function Home() {
                 <Navbar />
                 <VideoPlayer />
                 <Regis />
-                <Kegiatan />
+                {/* <Kegiatan /> */}
                 <Countdown />
                 <Footer />
             </section>
