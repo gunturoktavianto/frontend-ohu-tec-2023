@@ -44,7 +44,7 @@ const PriceList = () => {
   return (
     <div
       id="kegiatan"
-      className="scroll-smooth items-center justify-center w-screen py-20 font-Poppins"
+      className="items-center justify-center w-screen py-20 scroll-smooth font-Poppins"
     >
       <motion.div
         initial={{ scale: 0.95, opacity: 0 }}
@@ -72,12 +72,11 @@ const PriceList = () => {
           style={arrowStyle(windowWidth as number) as any}
         >
           <SwiperSlide>
-            <div className="w-screen flex justify-center">
+            <div className="flex justify-center w-screen">
               <div className="w-[60vw] h-[80vw] min-[450px]:w-[40vw] min-[450px]:h-[50vw] bg-gray-200 rounded-2xl flex flex-col overflow-clip sm:w-[30vw] sm:h-[40vw]  lg:w-[25vw] lg:h-[30vw] mt-9 min-[500px]:mt-10 md:mt-7 ">
-                <div className="w-full h-1/2 bg-red-200"></div>
+                <div className="w-full bg-red-200 h-1/2"></div>
                 <div
-                  className="w-full h-1/2 flex items-center 
-                            justify-center lg:justify-normal lg:pt-5 lg:px-16 text-center flex-col px-2"
+                  className="flex flex-col items-center justify-center w-full px-2 text-center h-1/2 lg:justify-normal lg:pt-5 lg:px-16"
                 >
                   <h2 className="font-bold text-sm sm:text-[15px] lg:text-[16px] min-[1300px]:text-lg ">
                     Accelerate Business Acumen
@@ -92,12 +91,11 @@ const PriceList = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="w-screen flex justify-center">
+            <div className="flex justify-center w-screen">
               <div className="w-[60vw] h-[80vw] min-[450px]:w-[40vw] min-[450px]:h-[50vw] bg-gray-200 rounded-2xl flex flex-col overflow-clip sm:w-[30vw] sm:h-[40vw]  lg:w-[25vw] lg:h-[30vw] mt-9 min-[500px]:mt-10 md:mt-7 ">
-                <div className="w-full h-1/2 bg-red-200"></div>
+                <div className="w-full bg-red-200 h-1/2"></div>
                 <div
-                  className="w-full h-1/2 flex items-center 
-                            justify-center lg:justify-normal lg:pt-5 lg:px-16 text-center flex-col px-2"
+                  className="flex flex-col items-center justify-center w-full px-2 text-center h-1/2 lg:justify-normal lg:pt-5 lg:px-16"
                 >
                   <h2 className="font-bold text-sm sm:text-[15px] lg:text-[16px] min-[1300px]:text-lg ">
                     Accelerate Business Acumen
@@ -112,12 +110,11 @@ const PriceList = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="w-screen flex justify-center">
+            <div className="flex justify-center w-screen">
               <div className="w-[60vw] h-[80vw] min-[450px]:w-[40vw] min-[450px]:h-[50vw] bg-gray-200 rounded-2xl flex flex-col overflow-clip sm:w-[30vw] sm:h-[40vw]  lg:w-[25vw] lg:h-[30vw] mt-9 min-[500px]:mt-10 md:mt-7 ">
-                <div className="w-full h-1/2 bg-red-200"></div>
+                <div className="w-full bg-red-200 h-1/2"></div>
                 <div
-                  className="w-full h-1/2 flex items-center 
-                            justify-center lg:justify-normal lg:pt-5 lg:px-16 text-center flex-col px-2"
+                  className="flex flex-col items-center justify-center w-full px-2 text-center h-1/2 lg:justify-normal lg:pt-5 lg:px-16"
                 >
                   <h2 className="font-bold text-sm sm:text-[15px] lg:text-[16px] min-[1300px]:text-lg ">
                     Accelerate Business Acumen

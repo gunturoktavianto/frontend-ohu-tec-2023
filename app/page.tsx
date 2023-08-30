@@ -6,11 +6,12 @@ import Countdown from "./component-ohu/Countdown";
 import Hero from "./component-ohu/Hero";
 import Kegiatan from "./component-ohu/Kegiatan";
 import Popup from "./component-ohu/Popup";
+import Challenge from "./component-ohu/Challenge";
 
 export default function Home() {
     
     return (
-        <html className="scroll-smooth overflow-x-hidden">
+        <html className="overflow-x-hidden scroll-smooth">
             <section className="w-[100vw]  overflow-hidden h-fit">
                 <Popup />
                 <Hero />
@@ -19,6 +20,7 @@ export default function Home() {
                 {/* <Regis /> */}
                 {/* <Kegiatan /> */}
                 <Countdown />
+                <Challenge></Challenge>
                 <Footer />
             </section>
         </html>
