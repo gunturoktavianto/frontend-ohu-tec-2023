@@ -7,21 +7,23 @@ import Hero from "./component-ohu/Hero";
 import Kegiatan from "./component-ohu/Kegiatan";
 import Popup from "./component-ohu/Popup";
 import Challenge from "./component-ohu/Challenge";
+import FormApp from "./component-ohu/Form/FormApp"; 
 
 export default function Home() {
     
     return (
         <html className="overflow-x-hidden scroll-smooth">
             <section className="w-[100vw]  overflow-hidden h-fit">
-                <Popup />
+                {/* <Popup />
                 <Hero />
                 <Navbar />
-                <VideoPlayer />
+                <VideoPlayer /> */}
                 {/* <Regis /> */}
                 {/* <Kegiatan /> */}
-                <Countdown />
+                {/* <Countdown />
                 <Challenge></Challenge>
-                <Footer />
+                <Footer /> */}
+                <FormApp />
             </section>
         </html>
     );
