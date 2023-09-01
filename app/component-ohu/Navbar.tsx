@@ -18,23 +18,24 @@ import { useScroll, useTransform, motion, useSpring } from "framer-motion";
 import NavProfile from "/public/assets/image/navbarProfile.jpg";
 
 const Navbar = () => {
-    const targetRef = useRef<HTMLDivElement>(null)
-    const { scrollYProgress } = useScroll()
+    const targetRef = useRef<HTMLDivElement>(null);
+    const { scrollYProgress } = useScroll();
     const scaleX = useSpring(scrollYProgress, {
         stiffness: 100,
         damping: 30,
-        restDelta: 0.001
+        restDelta: 0.001,
     });
 
     const ProgressBar = () => {
         return (
-            <motion.div  className="top-0 left-0 z-20 flex justify-start w-full ">
-                <motion.div style={{ scaleX }} className="w-full h-[3px] bg-red-500">
-
-                </motion.div>
+            <motion.div className="top-0 left-0 z-20 flex justify-start w-full ">
+                <motion.div
+                    style={{ scaleX }}
+                    className="w-full h-[3px] bg-red-500"
+                ></motion.div>
             </motion.div>
-        )
-    }
+        );
+    };
     const [show, setShow] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -79,7 +80,11 @@ const Navbar = () => {
                 <NavigationMenu>
                     <NavigationMenuList>
                         <NavigationMenuItem className="py-3">
-                            <NavigationMenuTrigger className={`text-2xl text-white bg-transparent ${!show && "text-black"}`}>
+                            <NavigationMenuTrigger
+                                className={`text-2xl text-white bg-transparent ${
+                                    !show && "text-black"
+                                }`}
+                            >
                                 <p className="">TEC</p>
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
@@ -149,7 +154,16 @@ const Navbar = () => {
                                 <NavigationMenuLink
                                     className={navigationMenuTriggerStyle()}
                                 >
-                                Countdown
+                                    Countdown
+                                </NavigationMenuLink>
+                            </a>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem className="scroll-smooth">
+                            <a className="scroll-smooth" href="/dashboard">
+                                <NavigationMenuLink
+                                    className={navigationMenuTriggerStyle()}
+                                >
+                                    Dashboard
                                 </NavigationMenuLink>
                             </a>
                         </NavigationMenuItem>
