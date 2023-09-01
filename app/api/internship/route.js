@@ -27,18 +27,15 @@ export async function POST(req) {
             buktiBayar,
             buktiPersyaratan,
         });
-
-        
+        return NextResponse.json({
+            msg: ["Registration Sucessful."],
+            success: true,
+        });
     } catch (error) {
         if (error instanceof mongoose.Error.ValidationError) {
-            let errorList = [];
-            for (let e in error.errors) {
-                errorList.push(error.errors[e].message);
-            }
-            console.log(errorList);
-            return NextResponse.json({ msg: errorList });
+            
         } else {
-            return NextResponse.json({ msg: ["Unable."] });
+            
         }
     }
 }

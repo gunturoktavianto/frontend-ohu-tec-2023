@@ -60,6 +60,19 @@ export default function FormInternship() {
                 <h1 className="font-bold text-3xl text-center ">
                     Form Pendaftaran TEC Internship 2023
                 </h1>
+                <div className="bg-slate-100 flex flex-col">
+                    {error &&
+                        error.map((e) => (
+                            <div
+                                key={e}
+                                className={`${
+                                    success ? "text-green-600 font-bold text-3xl"  : "text-red-600"
+                                } px-5 py-2`}
+                            >
+                                {e}
+                            </div>
+                        ))}
+                </div>
                 <form
                     onSubmit={handleSubmit}
                     className="py-4 mt-4 border-t flex flex-col gap-5"
@@ -69,9 +82,10 @@ export default function FormInternship() {
                         <input
                             onChange={(e) => setEmail(e.target.value)}
                             value={email}
-                            type="text"
+                            type="email"
                             id="email"
                             placeholder="Email"
+                            required
                         />
                     </div>
 
@@ -83,11 +97,13 @@ export default function FormInternship() {
                             type="text"
                             id="nama"
                             placeholder="Nama"
+                            required
+
                         />
                     </div>
 
                     <div>
-                        <label htmlFor="nama">
+                        <label htmlFor="nim">
                             NIM (selain angkatan 2023, gunakan NIM jurusan)
                         </label>
                         <input
@@ -96,6 +112,8 @@ export default function FormInternship() {
                             type="text"
                             id="nim"
                             placeholder="NIM"
+                            required
+
                         />
                     </div>
                     <div>
@@ -108,6 +126,8 @@ export default function FormInternship() {
                             type="text"
                             id="fakultas"
                             placeholder="Fakultas"
+                            required
+
                         />
                     </div>
                     <div>
@@ -120,6 +140,8 @@ export default function FormInternship() {
                             type="text"
                             id="jurusan"
                             placeholder="Jurusan"
+                            required
+
                         />
                     </div>
                     <div>
@@ -130,6 +152,8 @@ export default function FormInternship() {
                             type="text"
                             id="idLine"
                             placeholder="ID Line"
+                            required
+
                         />
                     </div>
                     <div>
@@ -142,6 +166,8 @@ export default function FormInternship() {
                             type="text"
                             id="buktiBayar"
                             placeholder="Link GDrive Bukti Pembayaran"
+                            required
+
                         />
                     </div>
                     <div>
@@ -156,6 +182,8 @@ export default function FormInternship() {
                             type="text"
                             id="buktiPersyaratan"
                             placeholder="Link GDrive Bukti Persyaratan"
+                            required
+
                         />
                     </div>
 
@@ -166,18 +194,6 @@ export default function FormInternship() {
                         Submit
                     </button>
                 </form>
-                <div className="bg-slate-100 flex flex-col">
-                    {error &&
-                        error.map((e) => (
-                            <div key={e}
-                                className={`${
-                                    success ? "text-green-800" : "text-red-600"
-                                } px-5 py-2`}
-                            >
-                                {e}
-                            </div>
-                        ))}
-                </div>
             </div>
         </>
     );
