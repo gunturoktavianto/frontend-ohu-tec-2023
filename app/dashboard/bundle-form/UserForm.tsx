@@ -23,7 +23,7 @@ export function UserForm({
     updateFields,
 }: UserFormProps) {
     return (
-        <FormWrapper title="User Details">
+        <FormWrapper title="Data Diri">
             <label>Email</label>
             <input
                 className="border-black border-[1px] border-solid rounded-sm"

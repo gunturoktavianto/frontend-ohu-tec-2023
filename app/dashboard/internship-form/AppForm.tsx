@@ -2,10 +2,10 @@
 import { FormEvent, useState } from "react";
 import { LinkPage3 } from "./LinkPage3";
 import { LinkPage2 } from "./LinkPage2";
-import { LinkPage4 } from "./LinkPage4";
 import { useMultistepForm } from "./UseMultistepForm";
 import { UserForm } from "./UserForm";
 import Link from "next/link";
+
 
 import {
     Dialog,
@@ -26,7 +26,6 @@ type FormData = {
     idLine: string;
     linkBuktiBayar: string;
     linkUploadPersyaratan: string;
-    linkFormTecFest: string;
 };
 
 const INITIAL_DATA: FormData = {
@@ -38,9 +37,8 @@ const INITIAL_DATA: FormData = {
     idLine: "",
     linkBuktiBayar: "",
     linkUploadPersyaratan: "",
-    linkFormTecFest: "",
-
 };
+
 
 function FormApp() {
     const [data, setData] = useState(INITIAL_DATA);
@@ -61,17 +59,26 @@ function FormApp() {
         <UserForm {...data} updateFields={updateFields} />,
         <LinkPage2 {...data} updateFields={updateFields} />,
         <LinkPage3 {...data} updateFields={updateFields} />,
-        <LinkPage4 {...data} updateFields={updateFields} />,
-
     ]);
+
+    const [email, setEmail] = useState("")
+
 
     function onSubmit(e: FormEvent) {
         e.preventDefault();
+        console.log(email)
+
         if (!isLastStep) return next();
     }
-    function buttonOnClick() {
-        return (window.location.href = "https://tecitb.com");
-    }
+
+    // const [email, setEmail] = useState("")
+
+    // const handleSubmit = (e: any) => {
+    //     e.preventDefault();
+    //     console.log(email)
+    // }
+
+    
 
     function ButtonStep() {
         if (isLastStep) {
