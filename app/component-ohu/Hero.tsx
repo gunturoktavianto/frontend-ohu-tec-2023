@@ -108,7 +108,7 @@ const Hero = () => {
             Prepare to TEC your seat on the one and only technopreneur club in
             ITB.
           </motion.p>
-          <a href="#countdown">
+          <a href="/dashboard">
             <button className="w-1/4 px-1 py-1 mx-3 my-5 bg-gradient-to-r from-[#FBB915] via-[#0A6EA2] to-[#6AC4B8] font-semibold rounded-xl md:my-7 md:h-10 text-white shadow-lg shadow-[#372F85] hover:scale-125 transition duration-1000 hover:duration-300 cursor-pointer ">
               Join Now!
             </button>
