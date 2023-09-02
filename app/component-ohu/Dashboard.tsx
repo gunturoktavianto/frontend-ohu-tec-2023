@@ -26,7 +26,7 @@ const Dashboard = () => {
         <div className="flex items-center justify-center w-screen overflow-x-hidden overflow-y-scroll py-14">
             <div className="w-[90vw]   flex flex-col items-center justify-center gap-14  md:items-start md:h-screen">
                 <div className="w-[70vw] md:w-full h-[1px] flex gap-2 items-center justify-center">
-                    <Link href='https://drive.google.com/drive/folders/1-EQTC7UZ89FuO44vWUKMjaO9XyTgr6si?usp=drive_link'>
+                    <Link href='https://drive.google.com/drive/folders/1-3U5xSyr7SCTIxYVTavMsh_y9ZAsOu79'>
                         <Button variant='link' className="flex gap-2">
                             <QuestionMark></QuestionMark>
                             <p>Guide Book Pendaftaran</p>
