@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
 
-import FormBundle from '@/app/component-ohu/FormBundle';
+import FormBundle from "@/app/component-ohu/FormBundle";
 
 export default function page() {
-  return (
-    <FormBundle></FormBundle>
-  )
+    return (
+        // <FormBundle></FormBundle>
+        <h1 className="text-center text-4xl">UNDER MAINTENANCE</h1>
+    );
 }
