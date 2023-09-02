@@ -31,7 +31,7 @@ const Dashboard = () => {
                             Daftar Internship
                         </h1>
                         <p className="text-2xl font-bold md:text-3xl md:py-2">
-                            Rp 45.000
+                            Rp45.000
                         </p>
                     </div>
                     <Button className="absolute bottom-0 w-4/5 -translate-y-10 p-0">
@@ -49,7 +49,7 @@ const Dashboard = () => {
                             </span>
                         </h1>
                         <p className="text-2xl font-bold md:text-3xl md:py-2">
-                            Rp 65.000
+                            Rp60.000
                         </p>
                         <Button className="absolute bottom-0 w-full text-xs">
                         <Link href="dashboard/bundle-form" className="w-full h-full flex items-center justify-center">
