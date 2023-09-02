@@ -149,7 +149,7 @@ const Navbar = () => {
                             </NavigationMenuContent>
                         </NavigationMenuItem>
 
-                        <NavigationMenuItem className="scroll-smooth">
+                    {/**    <NavigationMenuItem className="scroll-smooth">
                             <a className="scroll-smooth" href="#countdown">
                                 <NavigationMenuLink
                                     className={navigationMenuTriggerStyle()}
@@ -157,13 +157,13 @@ const Navbar = () => {
                                     Countdown
                                 </NavigationMenuLink>
                             </a>
-                        </NavigationMenuItem>
+                        </NavigationMenuItem>*/} 
                         <NavigationMenuItem className="scroll-smooth">
                             <a className="scroll-smooth" href="/dashboard">
                                 <NavigationMenuLink
                                     className={navigationMenuTriggerStyle()}
                                 >
-                                    Dashboard
+                                    Join Now!
                                 </NavigationMenuLink>
                             </a>
                         </NavigationMenuItem>

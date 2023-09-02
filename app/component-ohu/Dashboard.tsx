@@ -24,40 +24,49 @@ function QuestionMark() {
 const Dashboard = () => {
     return (
         <div className="flex items-center justify-center w-screen overflow-x-hidden overflow-y-scroll py-14">
-            <div className="w-[90vw]   flex flex-col items-center justify-center gap-14 md:flex-row md:items-start md:h-screen">
-                <div className="w-[70vw] h-fit pt-5 md:pt-0 rounded-2xl bg-gradient-to-b from-[#0A6EA2] via-[#6AC4B8] to-[#FBB915] flex items-center justify-center shadow-xl shadow-slate-400 md:w-[50vw] md:max-w-[70vw] relative md:h-[40vw]">
-                    <div className="relative flex flex-col w-4/5 px-2  min-h-[80vw] md:h-fit  md:min-h-[40vw]">
-                        <h1 className="w-full text-3xl font-bold md:text-5xl">
-                            Daftar Internship
-                        </h1>
-                        <p className="text-2xl font-bold md:text-3xl md:py-2">
-                            Rp45.000
-                        </p>
-                    </div>
-                    <Button className="absolute bottom-0 w-4/5 -translate-y-10 p-0">
-                        <Link href="dashboard/internship-form" className="w-full h-full flex items-center justify-center">
-                            Daftar Intership
-                        </Link>
-                    </Button>
+            <div className="w-[90vw]   flex flex-col items-center justify-center gap-14  md:items-start md:h-screen">
+                <div className="w-[70vw] md:w-full h-[1px] flex gap-2 items-center justify-center">
+                    <Link href='https://drive.google.com/drive/folders/1-EQTC7UZ89FuO44vWUKMjaO9XyTgr6si?usp=drive_link'>
+                        <Button variant='link' className="flex gap-2">
+                            <QuestionMark></QuestionMark>
+                            <p>Guide Book Pendaftaran</p>
+                        </Button>
+                    </Link>
                 </div>
-                <div className="w-[70vw] pt-5  rounded-2xl bg-gradient-to-b from-[#372F85] via-[#AF86D6] to-[#6AC4B8] shadow-xl shadow-slate-400 flex items-center justify-center flex-col md:w-[50vw]">
-                    <div className="relative flex flex-col w-4/5 px-2 min-h-[80vw] md:max-h-[50vw]  md:min-h-[40vw] md:max-w-[70vw]">
-                        <h1 className="w-full text-3xl font-bold md:text-5xl">
-                            Daftar Internship +<br />{" "}
-                            <span className="text-2xl md:text-4xl">
-                                TEC Festival
-                            </span>
-                        </h1>
-                        <p className="text-2xl font-bold md:text-3xl md:py-2">
-                            Rp60.000
-                        </p>
-                        <Button className="absolute bottom-0 w-full text-xs">
-                        <Link href="dashboard/bundle-form" className="w-full h-full flex items-center justify-center">
-                            Daftar Internship + TEC Festival
-                        </Link>
+                <div className="flex flex-col items-center justify-center w-full gap-8 md:gap-5 md:flex-row">
+                    <div className="w-[70vw] h-fit pt-5 md:pt-0 rounded-2xl bg-gradient-to-b from-[#0A6EA2] via-[#6AC4B8] to-[#FBB915] flex items-center justify-center shadow-xl shadow-slate-400 md:w-[30vw] md:max-w-[70vw] relative ">
+                        <div className="relative flex flex-col w-4/5 px-2  min-h-[60vw] md:h-fit  md:min-h-[20vw]">
+                            <h1 className="w-full text-3xl font-bold md:text-5xl md:pt-10">
+                                Daftar Internship
+                            </h1>
+                            <p className="text-2xl font-bold md:text-3xl md:py-2">
+                                Rp45.000
+                            </p>
+                        </div>
+                        <Button className="absolute bottom-0 w-4/5 p-0 -translate-y-10">
+                            <Link href="dashboard/internship-form" className="flex items-center justify-center w-full h-full">
+                                Daftar Intership
+                            </Link>
                         </Button>
                     </div>
-                    <div className="flex items-center justify-center w-4/5 gap-1 py-2">
+                    <div className="w-[70vw] pt-5  rounded-2xl bg-gradient-to-b from-[#372F85] via-[#AF86D6] to-[#6AC4B8] shadow-xl shadow-slate-400 flex items-center justify-center flex-col md:w-[30vw]">
+                        <div className="relative flex flex-col w-4/5 px-2 min-h-[70vw] md:max-h-[50vw]  md:min-h-[20vw] md:max-w-[70vw]">
+                            <h1 className="w-full text-3xl font-bold md:text-5xl">
+                                Daftar Internship +<br />{" "}
+                                <span className="text-2xl md:text-4xl">
+                                    TEC Festival
+                                </span>
+                            </h1>
+                            <p className="text-2xl font-bold md:text-3xl md:py-2">
+                                Rp60.000
+                            </p>
+                            <Button className="absolute bottom-0 w-full text-xs -translate-y-8">
+                                <Link href="dashboard/bundle-form" className="flex items-center justify-center w-full h-full">
+                                    Daftar Internship + TEC Festival
+                                </Link>
+                            </Button>
+                        </div>
+                        {/** <div className="flex items-center justify-center w-4/5 gap-1 py-2">
                         <Button
                             className="text-[11px] font-bold flex gap-1"
                             variant="link"
@@ -70,6 +79,7 @@ const Dashboard = () => {
                         >
                             Start-up Expo <QuestionMark />
                         </Button>
+                    </div>*/}
                     </div>
                 </div>
             </div>

@@ -19,7 +19,7 @@ export default function Home() {
                 <VideoPlayer />
                 {/* <Regis /> */}
                 {/* <Kegiatan /> */}
-                <Countdown />
+                {/** <Countdown />*/}
                 <Challenge></Challenge>
                 <Footer />
             </section>

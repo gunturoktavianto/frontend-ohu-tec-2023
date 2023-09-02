@@ -18,7 +18,7 @@ export default function FormBundle() {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
 
-        
+
 
         const res = await fetch("../api/bundle", {
             method: "POST",
@@ -56,17 +56,16 @@ export default function FormBundle() {
     return (
         <>
             <div className="w-[80%] mx-auto my-10">
-                <h1 className="font-bold text-3xl text-center ">
+                <h1 className="text-3xl font-bold text-center ">
                     Form Pendaftaran Bundle (TEC Internship 2023+TEC Festival 2023)
                 </h1>
-                <div className="bg-slate-100 flex flex-col">
+                <div className="flex flex-col bg-slate-100">
                     {error &&
                         error.map((e) => (
                             <div
                                 key={e}
-                                className={`${
-                                    success ? "text-green-600 font-bold text-3xl"  : "text-red-600"
-                                } px-5 py-2`}
+                                className={`${success ? "text-green-600 font-bold text-3xl" : "text-red-600"
+                                    } px-5 py-2`}
                             >
                                 {e}
                             </div>
@@ -74,8 +73,9 @@ export default function FormBundle() {
                 </div>
                 <form
                     onSubmit={handleSubmit}
-                    className="py-4 mt-4 border-t flex flex-col gap-5"
+                    className="flex flex-col gap-5 py-4 mt-4 border-t"
                 >
+                    <h2 className="text-2xl font-semibold">Data Diri</h2>
                     <div>
                         <label htmlFor="email">Email</label>
                         <input
@@ -156,6 +156,8 @@ export default function FormBundle() {
                         />
                     </div>
                     <div>
+                        <div className="w-full bg-slate-200 h-[1px] my-5"></div>
+                        <h2 className="text-2xl font-semibold">Bukti Pembayaran dan Persyaratan</h2>
                         <label htmlFor="buktiBayarBundle">
                             Link GDrive Bukti PembayaranBundle
                         </label>
@@ -185,12 +187,14 @@ export default function FormBundle() {
 
                         />
                     </div>
-                    <h2>FORM PENDAFTARAN TEC FESTIVAL (Grand Summit dan Startup Expo)</h2>
+                    <div className="w-full bg-slate-200 h-[1px] my-5"></div>
+                    
+                    <h2 className="text-xl font-semibold">Form Pendaftaran TEC FESTIVAL (Grand Summit dan Startup Expo)</h2>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJ8KQLwGWAnlt6HBtz1lhKxGTlMSduqVr8MrN2zF6Gr9RZ1w/viewform" className="text-blue-400 underline">Form Pendaftaran Grand Summit</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScCeAFZyiT0fIcS3ZEjn14dkVnvyWxT4B1wQh6XTUyMqDxjmg/viewform" className="text-blue-400 underline">Form Pendaftaran Startup Expo</a>
 
                     <button
-                        className="bg-green-700 p-3 text-white font-bold"
+                        className="p-3 font-bold text-white bg-green-700"
                         type="submit"
                     >
                         Submit

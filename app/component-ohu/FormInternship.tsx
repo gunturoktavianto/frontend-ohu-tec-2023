@@ -57,10 +57,10 @@ export default function FormInternship() {
     return (
         <>
             <div className="w-[80%] mx-auto my-10">
-                <h1 className="font-bold text-3xl text-center ">
+                <h1 className="text-3xl font-bold text-center ">
                     Form Pendaftaran TEC Internship 2023
                 </h1>
-                <div className="bg-slate-100 flex flex-col">
+                <div className="flex flex-col bg-slate-100">
                     {error &&
                         error.map((e) => (
                             <div
@@ -75,8 +75,9 @@ export default function FormInternship() {
                 </div>
                 <form
                     onSubmit={handleSubmit}
-                    className="py-4 mt-4 border-t flex flex-col gap-5"
+                    className="flex flex-col gap-5 py-4 mt-4 border-t"
                 >
+                    <h2 className="text-2xl font-semibold">Data Diri</h2>
                     <div>
                         <label htmlFor="email">Email</label>
                         <input
@@ -156,6 +157,8 @@ export default function FormInternship() {
 
                         />
                     </div>
+                    <div className="w-full bg-slate-200 h-[1px] my-5"></div>
+                    <h2 className="text-2xl font-semibold">Bukti Pembayaran dan Persyaratan</h2>
                     <div>
                         <label htmlFor="buktiBayar">
                             Link GDrive Bukti Pembayaran
@@ -170,6 +173,7 @@ export default function FormInternship() {
 
                         />
                     </div>
+                    
                     <div>
                         <label htmlFor="buktiPersyaratan">
                             Link GDrive Bukti Persyaratan
@@ -188,7 +192,7 @@ export default function FormInternship() {
                     </div>
 
                     <button
-                        className="bg-green-700 p-3 text-white font-bold"
+                        className="p-3 font-bold text-white bg-green-700"
                         type="submit"
                     >
                         Submit
