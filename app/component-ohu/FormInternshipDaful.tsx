@@ -154,7 +154,7 @@ export default function FormInternshipDaful() {
                             required
                         />
                     </div>
-                    <div className="w-full bg-black h-[2px] my-5"></div>
+                    <div className="w-full bg-slate-200 h-[2px] my-5"></div>
                     <h2 className="text-2xl font-semibold">
                         Bukti Pembayaran dan Persyaratan
                     </h2>
