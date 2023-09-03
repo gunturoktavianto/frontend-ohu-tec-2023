@@ -72,7 +72,7 @@ const DashboardBaru = () => {
                         </div>
                         <Button className="w-4/5 p-0 my-7">
                             <Link
-                                href="dashboard/bundle-form"
+                                href="pendaftaran-baru/bundle-form"
                                 className="flex items-center justify-center w-full h-full"
                             >
                                 Daftar Sekarang
