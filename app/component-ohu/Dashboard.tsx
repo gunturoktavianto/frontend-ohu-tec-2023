@@ -29,18 +29,21 @@ const Dashboard = () => {
                     <div className="w-[70vw] h-fit pt-5 md:pt-3 rounded-2xl bg-gradient-to-b from-[#0A6EA2] via-[#6AC4B8] to-[#FBB915] flex items-center justify-center shadow-xl shadow-slate-400 md:w-fit md:max-w-[70vw] relative md:h-fit flex-col">
                         <div className="relative flex flex-col w-4/5 px-2  min-h-[30vw] md:h-fit  md:min-h-[10vw]">
                             <h1 className="w-full text-3xl font-bold md:text-5xl md:pt-10">
-                                Daftar Internship
+                                Pendaftaran Ulang
                             </h1>
-                            <p className="text-2xl font-bold md:text-3xl md:py-2">
-                                Rp45.000
+                            <p className="text-xl md:text-3xl md:py-2">
+                                Bagi yang sudah <br /> pernah mendaftar <br />{" "}
+                                di booth OHU TEC pada <br /> tanggal 2 September
+                                2023, tetapi <br />
+                                belum mengisi form di website
                             </p>
                         </div>
                         <Button className="w-4/5 p-0 my-7">
                             <Link
-                                href="dashboard/internship-form"
+                                href="dashboard/daftar-ulang"
                                 className="flex items-center justify-center w-full h-full"
                             >
-                                Daftar Intership
+                                Isi Sekarang
                             </Link>
                         </Button>
                     </div>
@@ -77,33 +80,35 @@ const Dashboard = () => {
                         </div>
                     </div>*/}
                     <div className="w-[70vw] h-fit pt-5 md:pt-3 rounded-2xl bg-gradient-to-b from-[#372F85] via-[#AF86D6] to-[#6AC4B8] flex items-center justify-center shadow-xl shadow-slate-400 md:w-fit md:max-w-[70vw] relative md:h-fit flex-col">
-                        <div className="relative flex flex-col w-4/5 px-2  min-h-[30vw] md:h-fit  md:min-h-[10vw]">
+                        <div className="relative flex flex-col w-4/5 px-2 py-4 min-h-[30vw] md:h-fit  md:min-h-[10vw]">
                             <h1 className="w-full text-3xl font-bold md:text-5xl">
-                                Daftar Internship +<br />{" "}
-                                <span className="text-2xl md:text-4xl">
-                                    TEC Festival
-                                </span>
+                                Pendaftaran Baru
                             </h1>
-                            <p className="text-2xl font-bold md:text-3xl md:py-2">
-                                Rp60.000
+                            <p className="text-xl md:text-3xl md:py-2">
+                                Bagi yang belum <br /> pernah melakukan
+                                pendaftaran <br /> sama sekali.<br/> Harap baca
+                                guidebook <br/> terlebih dahulu sebelum mendaftar
                             </p>
                         </div>
                         <Button className="w-4/5 p-0 my-7">
                             <Link
-                                href="dashboard/bundle-form"
+                                href="dashboard/pendaftaran-baru"
                                 className="flex items-center justify-center w-full h-full"
                             >
-                                Daftar Internship + TEC Festival
+                                Daftar Sekarang
                             </Link>
                         </Button>
                     </div>
                 </div>
                 <div className="w-[70vw] md:w-full h-[1px] flex gap-2 items-center justify-center mt-5">
                     <Link href="https://drive.google.com/drive/folders/1-3U5xSyr7SCTIxYVTavMsh_y9ZAsOu79">
-                        <Button variant="link" className="flex gap-2 border-2 border-black rounded-2xl p-10">
+                        <Button
+                            variant="link"
+                            className="flex gap-2 border-2 border-black rounded-2xl p-10"
+                        >
                             <QuestionMark></QuestionMark>
                             <h1 className="font-bold text-4xl">
-                                Guide Book Pendaftaran
+                                Guidebook Pendaftaran
                             </h1>
                         </Button>
                     </Link>

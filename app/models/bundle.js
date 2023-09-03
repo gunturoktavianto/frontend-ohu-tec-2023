@@ -1,48 +1,48 @@
 import mongoose, { Schema } from "mongoose";
 
-const bundleSchema = new Schema({
-  emailBundle: {
+const internshipSchema = new Schema({
+  email: {
     type: String,
     required: true,
   },
 
-  namaBundle: {
+  nama: {
     type: String,
     required: true,
   },
 
-  nimBundle: {
+  nim: {
     type: String,
     required: true,
   },
 
-  fakultasBundle: {
+  fakultas: {
     type: String,
     required: true,
   },
 
-  jurusanBundle: {
+  jurusan: {
     type: String,
     required: true,
   },
 
-  idLineBundle: {
+  idLine: {
     type: String,
     required: true,
   },
 
-  buktiBayarBundle: {
+  buktiBayar: {
     type: String,
     required: true,
   },
 
-  buktiPersyaratanBundle: {
+  buktiPersyaratan: {
     type: String,
     required: true,
   },
 });
 
-const Bundle =
-  mongoose.models.Bundle || mongoose.model("Bundle", bundleSchema);
+const Internship =
+  mongoose.models.Internship || mongoose.model("Internship", internshipSchema);
 
-export default Bundle;
+export default Internship;

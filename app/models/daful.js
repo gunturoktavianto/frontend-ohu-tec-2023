@@ -1,6 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 
-const internshipSchema = new Schema({
+const dafulSchema = new Schema({
   email: {
     type: String,
     required: true,
@@ -42,7 +42,7 @@ const internshipSchema = new Schema({
   },
 });
 
-const Internship =
-  mongoose.models.Internship || mongoose.model("Internship", internshipSchema);
+const Daful =
+  mongoose.models.Daful || mongoose.model("Daful", dafulSchema);
 
-export default Internship;
+export default Daful;
