@@ -20,6 +20,7 @@ export default function Home() {
                 {/* <Regis /> */}
                 {/* <Kegiatan /> */}
                 {/** <Countdown />*/}
+                <Kegiatan />
                 <Challenge></Challenge>
                 <Footer />
             </section>
