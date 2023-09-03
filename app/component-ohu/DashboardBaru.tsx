@@ -47,7 +47,7 @@ const DashboardBaru = () => {
                                 <br />
                             </h1>
                             <p className="text-xl md:text-3xl md:py-2">
-                                Segera daftarkan diri mu!
+                                Segera daftarkan dirimu!
                             </p>
                         </div>
                         <Button className="w-4/5 p-0 my-7">
@@ -67,7 +67,7 @@ const DashboardBaru = () => {
                             </h1>
                             <p className="text-xl md:text-3xl md:py-2">
                                 Daftar TEC Internship <br /> sekaligus TEC
-                                Festival
+                                Festival!
                             </p>
                         </div>
                         <Button className="w-4/5 p-0 my-7">

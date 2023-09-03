@@ -34,7 +34,7 @@ const Dashboard = () => {
                             <p className="text-xl md:text-3xl md:py-2">
                                 Bagi yang sudah <br />  mendaftar di booth OHU TEC<br />{" "}
                                   pada <br /> tanggal 2 September
-                                2023 <br />
+                                2023. <br />
                                 
                             </p>
                         </div>
