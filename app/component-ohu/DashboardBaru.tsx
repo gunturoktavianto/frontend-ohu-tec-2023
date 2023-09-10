@@ -29,10 +29,10 @@ const DashboardBaru = () => {
                     <Link href="https://drive.google.com/drive/folders/1-3U5xSyr7SCTIxYVTavMsh_y9ZAsOu79">
                         <Button
                             variant="link"
-                            className="flex gap-2 border-2 border-black rounded-2xl p-10"
+                            className="flex gap-2 p-10 border-2 border-black rounded-2xl"
                         >
                             <QuestionMark></QuestionMark>
-                            <h1 className="font-bold text-4xl">
+                            <h1 className="text-4xl font-bold">
                                 Guidebook Pendaftaran
                             </h1>
                         </Button>
@@ -47,7 +47,7 @@ const DashboardBaru = () => {
                                 <br />
                             </h1>
                             <p className="text-xl md:text-3xl md:py-2">
-                                Pendaftaran akan ditutup pada{" "}
+                                Pendaftaran dibuka hingga tanggal{" "}
                                 <span className="font-bold underline">
                                     12 September 2023, pukul 23.59 WIB
                                 </span>
@@ -70,12 +70,12 @@ const DashboardBaru = () => {
                             </h1>
                             <p className="text-xl md:text-3xl md:py-2">
                                 Daftar TEC Internship <br /> sekaligus TEC
-                                Festival
+                                Festival!
                             </p>
                         </div>
                         <Button className="w-4/5 p-0 my-7">
                             <Link
-                                href="pendaftaran-baru/bundle-form"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSfp_eVcMb_WDYmgQvu7v3vrkk_XpNQAZPC3UJe92l0BPvvkGA/viewform?usp=sharing"
                                 className="flex items-center justify-center w-full h-full"
                             >
                                 Pendaftaran Sudah Ditutup

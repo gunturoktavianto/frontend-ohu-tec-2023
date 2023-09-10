@@ -10,7 +10,7 @@ function QuestionMark() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-4 h-4"
+            className="w-6 h-6"
         >
             <path
                 strokeLinecap="round"
@@ -28,14 +28,14 @@ const Dashboard = () => {
                 <div className="flex flex-col items-center justify-center w-full gap-8 md:gap-5 md:flex-row">
                     <div className="w-[70vw] h-fit pt-5 md:pt-3 rounded-2xl bg-gradient-to-b from-[#0A6EA2] via-[#6AC4B8] to-[#FBB915] flex items-center justify-center shadow-xl shadow-slate-400 md:w-fit md:max-w-[70vw] relative md:h-fit flex-col">
                         <div className="relative flex flex-col w-4/5 px-2  min-h-[30vw] md:h-fit  md:min-h-[10vw]">
-                            <h1 className="w-full text-3xl font-bold md:text-5xl md:pt-10">
+                            <h1 className="w-full text-3xl font-bold md:text-4xl md:pt-10">
                                 Pendaftaran Ulang
                             </h1>
                             <p className="text-xl md:text-3xl md:py-2">
-                                Bagi yang sudah <br /> pernah mendaftar <br />{" "}
-                                di booth OHU TEC pada <br /> tanggal 2 September
-                                2023, tetapi <br />
-                                belum mengisi form di website
+                                Bagi yang sudah <br />  mendaftar di booth OHU TEC<br />{" "}
+                                  pada <br /> tanggal 2 September
+                                2023. <br />
+                                
                             </p>
                         </div>
                         <Button className="w-4/5 p-0 my-7">
@@ -87,7 +87,7 @@ const Dashboard = () => {
                             <p className="text-xl md:text-3xl md:py-2">
                                 Bagi yang belum <br /> pernah melakukan
                                 pendaftaran <br /> sama sekali.<br/> Harap baca
-                                guidebook <br/> terlebih dahulu sebelum mendaftar
+                                guidebook <br/> terlebih dahulu sebelum mendaftar.
                             </p>
                         </div>
                         <Button className="w-4/5 p-0 my-7">
@@ -104,10 +104,10 @@ const Dashboard = () => {
                     <Link href="https://drive.google.com/drive/folders/1-3U5xSyr7SCTIxYVTavMsh_y9ZAsOu79">
                         <Button
                             variant="link"
-                            className="flex gap-2 border-2 border-black rounded-2xl p-10"
+                            className="flex gap-2 p-10 border-2 border-black rounded-2xl"
                         >
                             <QuestionMark></QuestionMark>
-                            <h1 className="font-bold text-4xl">
+                            <h1 className="text-4xl font-bold">
                                 Guidebook Pendaftaran
                             </h1>
                         </Button>

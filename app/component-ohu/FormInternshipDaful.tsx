@@ -154,7 +154,7 @@ export default function FormInternshipDaful() {
                             required
                         />
                     </div>
-                    <div className="w-full bg-black h-[2px] my-5"></div>
+                    <div className="w-full bg-slate-200 h-[2px] my-5"></div>
                     <h2 className="text-2xl font-semibold">
                         Bukti Pembayaran dan Persyaratan
                     </h2>
@@ -162,6 +162,7 @@ export default function FormInternshipDaful() {
                         <label htmlFor="buktiBayar">
                             Link GDrive Bukti Pembayaran
                         </label>
+                        <p className="text-xs text-slate-500">Silakan membuat folder pada Google Drive sesuai instruksi pada Guidebook Pendaftaran. Jika kamu membayar melalui cash, silakan isi kolom dengan tulisan "Cash". Kami akan mencocokkan data kamu!</p>
                         <input
                             onChange={(e) => setBuktiBayar(e.target.value)}
                             value={buktiBayar}
@@ -176,6 +177,7 @@ export default function FormInternshipDaful() {
                         <label htmlFor="buktiPersyaratan">
                             Link GDrive Bukti Persyaratan
                         </label>
+                        <p className="text-xs text-slate-500"> Pisahkan folder antara bukti pembayaran dan bukti persyaratan. Tata cara penamaan dan lainnya dapat dilihat pada Guidebook Pendaftaran.  Manggatt 😍</p>
                         <input
                             onChange={(e) =>
                                 setBuktiPersyaratan(e.target.value)

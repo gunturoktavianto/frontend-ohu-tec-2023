@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div id="footer" className=" bg-slate-200">
       <section>
-        <div className='lg:flex pb-5'>
+        <div className='pb-5 lg:flex'>
           <div className='m-5 text-sm basis-1/3 lg:mx-20'>
             <h1 className='font-bold'>Techno Entrepreneur Club</h1>
             {/* <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum dicta rem perferendis quia assumenda qui. Explicabo sint eum molestias recusandae.</h2> */}
@@ -38,6 +38,12 @@ function Footer() {
               <FaLine size="2em" />
               <div className='ml-3'>
                 <h2>nafisha_44</h2>
+              </div>
+            </div>
+            <div className='flex items-center mt-2'>
+              <FaLine size="2em" />
+              <div className='ml-3'>
+                <h2>khalshft</h2>
               </div>
             </div>
 {/* 
