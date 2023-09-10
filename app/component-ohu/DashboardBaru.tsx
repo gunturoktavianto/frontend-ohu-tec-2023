@@ -47,7 +47,10 @@ const DashboardBaru = () => {
                                 <br />
                             </h1>
                             <p className="text-xl md:text-3xl md:py-2">
-                                Segera daftarkan diri mu!
+                                Pendaftaran akan ditutup pada{" "}
+                                <span className="font-bold underline">
+                                    12 September 2023, pukul 23.59 WIB
+                                </span>
                             </p>
                         </div>
                         <Button className="w-4/5 p-0 my-7">
@@ -60,7 +63,7 @@ const DashboardBaru = () => {
                         </Button>
                     </div>
 
-                    <div className="w-[70vw] h-fit pt-5 md:pt-3 rounded-2xl bg-gradient-to-b from-[#372F85] via-[#AF86D6] to-[#6AC4B8] flex items-center justify-center shadow-xl shadow-slate-400 md:w-fit md:max-w-[70vw] relative md:h-fit flex-col">
+                    {/* <div className="w-[70vw] h-fit pt-5 md:pt-3 rounded-2xl bg-gradient-to-b from-[#372F85] via-[#AF86D6] to-[#6AC4B8] flex items-center justify-center shadow-xl shadow-slate-400 md:w-fit md:max-w-[70vw] relative md:h-fit flex-col">
                         <div className="relative flex flex-col w-4/5 px-2 py-4 min-h-[30vw] md:h-fit  md:min-h-[10vw]">
                             <h1 className="w-full text-3xl font-bold md:text-5xl">
                                 Pendaftaran Bundle
@@ -75,10 +78,10 @@ const DashboardBaru = () => {
                                 href="pendaftaran-baru/bundle-form"
                                 className="flex items-center justify-center w-full h-full"
                             >
-                                Daftar Sekarang
+                                Pendaftaran Sudah Ditutup
                             </Link>
                         </Button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
