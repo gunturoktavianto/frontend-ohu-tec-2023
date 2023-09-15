@@ -49,7 +49,7 @@ const DashboardBaru = () => {
                             <p className="text-xl md:text-3xl md:py-2">
                                 Pendaftaran dibuka hingga tanggal{" "}
                                 <span className="font-bold underline">
-                                    12 September 2023, pukul 23.59 WIB
+                                    16 September 2023, pukul 20.23 WIB
                                 </span>
                             </p>
                         </div>
