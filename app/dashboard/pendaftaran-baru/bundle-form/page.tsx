@@ -5,7 +5,8 @@ import FormBundle from "@/app/component-ohu/FormBundle";
 export default function page() {
     return (
         // <FormBundle></FormBundle>
-        <h1 className="text-3xl font-bold text-center">Coming Soon</h1>
-        
+        <h1 className="font-bold text-5xl text-center bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
+            PENDAFTARAN SUDAH DITUTUP
+        </h1>
     );
 }
